@@ -104,13 +104,29 @@ nav .right a span {
 
 .header-section .headshot {
     flex: 2;
+    display: flex;
+    justify-content: right;
 }
 
 .header-section .headshot img {
     border-radius: 100%;
     width: 350px;
 }
-
+@media (max-width: 850px) {
+    /* Section 1 header */
+    .header-section .text h2{
+        font-size: 32px;
+    }
+}
+@media (max-width: 740px) {
+    /* Section 1 header */
+    .header-section {
+        flex-direction: column-reverse;
+    }
+    .header-section .headshot img {
+        width: 300px;
+    }
+}
 
 @media (max-width: 600px) {
 /* NAVBAR */
