@@ -10,7 +10,7 @@ def listTasks():
         print("There are no tasks")
     else:
         print("Current Tasks:")
-        for index, task in enumerate(tasks)
+        for index, task in enumerate(tasks):
             print (f"Task #{index}. {task}")
     
 def deleteTask():
@@ -43,20 +43,16 @@ if __name__ == '__main__':
         print("3. List tasks")
         print("4. Exit")
         
-        choice = input("Enter your choice: ")
-        
         print("-------------------------")
-        # Print Menu
-        print_menu()
-        # Ask for option
-        choice = input("Choose an option")
-        if (choice == '1'):
+        choice = input("Type your name to add tasks: ")
+
+        if (choice == "1"):
             addTask()
-        elif (choice =='2'):
+        elif (choice == "2"):
             deleteTask()
-        elif (choice =='3'):
+        elif (choice == "3"):
             listTasks()
-        elif (choice =='4'): 
+        elif (choice == "4"): 
             break
         else:
             print("Invalid, try again.")   
