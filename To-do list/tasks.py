@@ -44,7 +44,7 @@ if __name__ == '__main__':
         print("4. Exit")
         
         print("-------------------------")
-        choice = input("Type your name to add tasks: ")
+        choice = input("Please Select a Number 1-4: ")
 
         if (choice == "1"):
             addTask()
